@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./scss/_typography.scss";
+@import "./scss/_layout.scss";
+@import "./scss/_buttons.scss";
+@import "./scss/_swiper.scss";
+@import "./scss/_accordion.scss";
+
 body {
   background-color: #ffe7f8;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
