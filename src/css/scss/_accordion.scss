@@ -1,0 +1,18 @@
+.accordion-content {
+  overflow: hidden;
+  transition: 0.5s all ease;
+}
+
+.accordion-button {
+  transition: 0.5s all ease;
+
+  & span {
+    transition: 0.5s all ease;
+  }
+}
+
+.accordion-button.active {
+  & span {
+    transform: rotate(45deg);
+  }
+}
