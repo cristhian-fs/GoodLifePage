@@ -2000,6 +2000,11 @@ video {
   background-color: rgb(180 250 194 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F33E99\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 62 153 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FDCEF0\] {
   --tw-bg-opacity: 1;
   background-color: rgb(253 206 240 / var(--tw-bg-opacity));
@@ -2182,14 +2187,14 @@ video {
      object-fit: scale-down;
 }
 
-.object-left-top {
-  -o-object-position: left top;
-     object-position: left top;
-}
-
 .object-center {
   -o-object-position: center;
      object-position: center;
+}
+
+.object-left-top {
+  -o-object-position: left top;
+     object-position: left top;
 }
 
 .p-10 {
