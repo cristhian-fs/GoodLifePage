@@ -36,4 +36,25 @@ document.addEventListener("DOMContentLoaded", (e) => {
       img.addEventListener("load", loaded);
     }
   });
+
+  // USER LOCATION
+  const cityId = document.querySelectorAll(".address");
+  fetch("https://ipinfo.io/json")
+    .then((response) => {
+      if (!response.ok) {
+        document.querySelector(".userLocationDiv").style.display = none;
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      document.querySelector(".userLocationDiv").style.display = "flex";
+      cityId.forEach((citie) => {
+        citie.innerHTML = data.city;
+      });
+    })
+    .catch((error) => {
+      console.error("Error during fetch:", error);
+      document.querySelector(".userLocationDiv").style.display = "none";
+    });
 });
