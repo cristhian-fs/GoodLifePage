@@ -64,7 +64,3 @@ Abra o arquivo index.html no seu navegador para visualizar a página de vendas. 
 ## Licença
 
 Este projeto é licensiado sobre a [MIT License](https://opensource.org/licenses/MIT).
-
-```
-
-```
