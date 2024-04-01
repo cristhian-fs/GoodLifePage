@@ -691,6 +691,10 @@ video {
   z-index: 10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -992,6 +996,11 @@ video {
 
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2000,6 +2009,11 @@ video {
   background-color: rgb(180 250 194 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#EA1C1A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 28 26 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#F33E99\] {
   --tw-bg-opacity: 1;
   background-color: rgb(243 62 153 / var(--tw-bg-opacity));
@@ -2211,6 +2225,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-16 {
@@ -2874,7 +2892,7 @@ video {
 
 @media (max-width: 767px) {
   .heroSection {
-    padding-top: 440px;
+    padding-top: 60%;
   }
 
   #section03 {
@@ -2894,13 +2912,13 @@ video {
 
 @media (max-width: 560px) {
   .heroSection {
-    padding-top: 360px;
+    padding-top: 60%;
   }
 }
 
 @media (max-width: 480px) {
   .heroSection {
-    padding-top: 320px;
+    padding-top: 80%;
   }
 
   #section03 {
@@ -2920,7 +2938,7 @@ video {
 
 @media (max-width: 375px) {
   .heroSection {
-    padding-top: 380px;
+    padding-top: 90%;
   }
 
   #section03 {
@@ -2940,7 +2958,7 @@ video {
 
 @media (max-width: 320px) {
   .heroSection {
-    padding-top: 320px;
+    padding-top: 80%;
   }
 
   #section03 {
@@ -3054,6 +3072,10 @@ body {
   background-color: #ffe7f8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   width: 100%;
@@ -3121,6 +3143,10 @@ body {
 @media (min-width: 640px) {
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
   }
 
   .sm\:px-16 {
