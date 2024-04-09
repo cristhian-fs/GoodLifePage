@@ -59,4 +59,22 @@ document.addEventListener("DOMContentLoaded", (e) => {
   }
 
   userLocationFetch();
+
+  const splitTypes = document.querySelectorAll(".reveal-text3");
+
+  splitTypes.forEach((char, index) => {
+    const text = new SplitType(char);
+    gsap.from(text.chars, {
+      stagger: 0.3,
+      opacity: 0.2,
+      scaleY: 0,
+      y: -50,
+      scrollTrigger: {
+        trigger: char,
+        start: "top 80%",
+        end: "top 40%",
+        scrub: true,
+      },
+    });
+  });
 });
