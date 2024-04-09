@@ -3350,6 +3350,10 @@ body {
     max-width: 1920px;
   }
 
+  .xl\:max-w-\[1280px\] {
+    max-width: 1280px;
+  }
+
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
