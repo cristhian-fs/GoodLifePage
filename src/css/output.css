@@ -2485,6 +2485,11 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2869,7 +2874,7 @@ video {
 @font-face {
   font-family: "Barlow";
 
-  src: url("../fonts/Barlow-Regular.woff") format("woff"), url("../fonts/Barlow-Regular.woff2") format("woff2");
+  src: url("https://goodlifebr.com.br/good-life-assets/fonts/Barlow-Regular.woff") format("woff"), url("https://goodlifebr.com.br/good-life-assets/fonts/Barlow-Regular.woff2") format("woff2");
 
   font-weight: 400;
 
@@ -2881,7 +2886,7 @@ video {
 @font-face {
   font-family: "Barlow";
 
-  src: url("../fonts/Barlow-Semibold.woff") format("woff"), url("../fonts/Barlow-Semibold.woff2") format("woff2");
+  src: url("https://goodlifebr.com.br/good-life-assets/fonts/Barlow-Semibold.woff") format("woff"), url("https://goodlifebr.com.br/good-life-assets/fonts/Barlow-Semibold.woff2") format("woff2");
 
   font-weight: 600;
 
@@ -3320,9 +3325,45 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .xl\:min-h-\[599px\] {
+    min-height: 599px;
+  }
+
+  .xl\:min-h-\[751px\] {
+    min-height: 751px;
+  }
+
+  .xl\:min-h-\[840px\] {
+    min-height: 840px;
+  }
+
+  .xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .xl\:max-w-\[1920px\] {
+    max-width: 1920px;
+  }
+
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .\32xl\:max-w-\[1920px\] {
+    max-width: 1920px;
   }
 }
 
